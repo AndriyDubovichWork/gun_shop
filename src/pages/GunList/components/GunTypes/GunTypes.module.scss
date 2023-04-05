@@ -1,0 +1,26 @@
+.GunTypes {
+	flex-grow: 1;
+	text-align: center;
+	.GunType {
+		display: flex;
+		flex-direction: column;
+
+		.BulletImage {
+			transform: rotate(90deg);
+
+			height: 1.5vh;
+			width: 100%;
+
+			display: flex;
+			margin: 40px auto;
+		}
+		.name {
+			font-size: 16px;
+			letter-spacing: 0.1rem;
+			font-family: 'Comfortaa', cursive;
+		}
+	}
+	.GunType:hover {
+		filter: sepia(100%) saturate(300%) brightness(90%) hue-rotate(180deg);
+	}
+}
