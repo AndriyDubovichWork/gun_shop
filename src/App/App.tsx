@@ -1,9 +1,9 @@
-import GunList from '../pages/GunList/GunList';
+import AllGunsList from '../modules/AllGunsList/AllGunsList';
 
 const App = () => {
 	return (
 		<>
-			<GunList />
+			<AllGunsList />
 		</>
 	);
 };

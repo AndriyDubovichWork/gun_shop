@@ -1,4 +1,4 @@
-import GunsSelect from './components/GunsSelect/GunsSelect';
+import GunsSelect from '../../components/GunsSelectArrows/GunsSelect';
 
 const Main = () => {
 	return (

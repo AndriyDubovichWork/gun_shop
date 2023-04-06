@@ -1,4 +1,4 @@
-import GunTypes from '../GunTypes/GunTypes';
+import GunTypes from '../../components/GunCalibers/GunCalibers';
 import logo from './assets/logo.svg';
 import style from './Sidebar.module.scss';
 

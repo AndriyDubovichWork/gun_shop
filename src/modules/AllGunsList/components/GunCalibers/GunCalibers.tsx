@@ -1,10 +1,10 @@
-import pistol from './bullets/pistol.svg';
-import rifle from './bullets/rifle.svg';
-import smg from './bullets/smg.svg';
-import sniperRifle from './bullets/sniperRifle.svg';
-import style from './GunTypes.module.scss';
+import pistol from './bulletsImgs/pistol.svg';
+import rifle from './bulletsImgs/rifle.svg';
+import smg from './bulletsImgs/smg.svg';
+import sniperRifle from './bulletsImgs/sniperRifle.svg';
+import style from './GunCalibers.module.scss';
 
-const GunTypes = () => {
+const GunCalibers = () => {
 	const bullets = [
 		{ url: sniperRifle, name: 'Sniper Rifle' },
 		{ url: rifle, name: 'Rifle' },
@@ -25,4 +25,4 @@ const GunTypes = () => {
 	);
 };
 
-export default GunTypes;
+export default GunCalibers;
