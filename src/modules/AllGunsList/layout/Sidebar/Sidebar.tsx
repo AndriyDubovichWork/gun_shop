@@ -1,5 +1,5 @@
-import GunTypes from '../../components/GunCalibers/GunCalibers';
 import logo from './assets/logo.svg';
+import GunTypes from './components/GunCalibers/GunCalibers';
 import style from './Sidebar.module.scss';
 
 type SidebarPropsT = {

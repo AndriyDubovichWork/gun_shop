@@ -7,24 +7,26 @@ const GunsSelect = () => {
 	return (
 		<div className={style.GunsSelect}>
 			<div className={style.Options}>
-				<div className={style.previous}>{guns[selectedId - 1]} </div>
+				<div className={style.previous}>{guns[selectedId - 1]}</div>
 				<img
+					className={style.leftArrow}
 					src={arrow}
-					alt='arrow'
+					alt='left arrow'
 					onClick={() => {
 						setSelectedId(selectedId - 1);
 					}}
 				/>
 				<div className={style.current}>{guns[selectedId]}</div>
 				<img
+					className={style.rightArrow}
 					src={arrow}
-					alt='arrow'
+					alt='right arrow'
 					style={{ transform: 'scaleX(-1)' }}
 					onClick={() => {
 						setSelectedId(selectedId + 1);
 					}}
 				/>
-				<div className={style.next}> {guns[selectedId + 1]}</div>
+				<div className={style.next}>{guns[selectedId + 1]}</div>
 			</div>
 		</div>
 	);
