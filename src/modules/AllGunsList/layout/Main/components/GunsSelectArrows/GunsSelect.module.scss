@@ -45,5 +45,19 @@
 			-moz-background-clip: text;
 			-moz-text-fill-color: transparent;
 		}
+
+		.leftArrow:hover,
+		.rightArrow:hover {
+			cursor: pointer;
+			filter: sepia(100%) saturate(300%) brightness(90%) hue-rotate(180deg);
+		}
+
+		.previous,
+		.current,
+		.next {
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
 	}
 }

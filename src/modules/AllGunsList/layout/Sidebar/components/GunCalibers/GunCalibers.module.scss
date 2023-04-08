@@ -21,6 +21,7 @@
 		}
 	}
 	.GunType:hover {
+		cursor: pointer;
 		filter: sepia(100%) saturate(300%) brightness(90%) hue-rotate(180deg);
 	}
 }

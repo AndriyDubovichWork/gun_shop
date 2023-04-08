@@ -2,8 +2,17 @@ import { useState } from 'react';
 import arrow from './assets/arrow.svg';
 import style from './GunsSelect.module.scss';
 const GunsSelect = () => {
-	const guns = ['helo', 'hi', 'bye', 'lol men you are looking for'];
+	const guns = ['helo', 'hi', 'bye', 'lol men you are looking for 213123'];
 	const [selectedId, setSelectedId] = useState(1);
+
+	const ChangeIdByValue = (value: number) => {
+		if (value > 0 && selectedId < guns.length - 1) {
+			setSelectedId(selectedId + value);
+		}
+		if (value < 0 && selectedId > 0) {
+			setSelectedId(selectedId + value);
+		}
+	};
 	return (
 		<div className={style.GunsSelect}>
 			<div className={style.Options}>
@@ -13,7 +22,7 @@ const GunsSelect = () => {
 					src={arrow}
 					alt='left arrow'
 					onClick={() => {
-						setSelectedId(selectedId - 1);
+						ChangeIdByValue(-1);
 					}}
 				/>
 				<div className={style.current}>{guns[selectedId]}</div>
@@ -23,7 +32,7 @@ const GunsSelect = () => {
 					alt='right arrow'
 					style={{ transform: 'scaleX(-1)' }}
 					onClick={() => {
-						setSelectedId(selectedId + 1);
+						ChangeIdByValue(1);
 					}}
 				/>
 				<div className={style.next}>{guns[selectedId + 1]}</div>
