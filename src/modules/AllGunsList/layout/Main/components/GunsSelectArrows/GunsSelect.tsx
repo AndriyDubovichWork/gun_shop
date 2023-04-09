@@ -18,6 +18,7 @@ const GunsSelect = () => {
 			<div className={style.Options}>
 				<div className={style.previous}>{guns[selectedId - 1]}</div>
 				<img
+					draggable={false}
 					className={style.leftArrow}
 					src={arrow}
 					alt='left arrow'
@@ -27,6 +28,7 @@ const GunsSelect = () => {
 				/>
 				<div className={style.current}>{guns[selectedId]}</div>
 				<img
+					draggable={false}
 					className={style.rightArrow}
 					src={arrow}
 					alt='right arrow'

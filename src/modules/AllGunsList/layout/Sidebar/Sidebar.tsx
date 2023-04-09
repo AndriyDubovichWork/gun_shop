@@ -10,7 +10,7 @@ type SidebarPropsT = {
 const Sidebar = ({ backgroundColor, dividerColor }: SidebarPropsT) => {
 	return (
 		<div className={style.Sidebar} style={{ backgroundColor }}>
-			<img src={logo} alt='logo' className={style.Logo} />
+			<img src={logo} alt='logo' className={style.Logo} draggable={false} />
 			<div className={style.Divider} style={{ backgroundColor: dividerColor }} />
 			<GunTypes />
 		</div>

@@ -16,7 +16,12 @@ const GunCalibers = () => {
 			{bullets.map((bullet) => {
 				return (
 					<div className={style.GunType}>
-						<img src={bullet.url} alt='cannot load img' className={style.BulletImage} />
+						<img
+							draggable={false}
+							src={bullet.url}
+							alt='bullet img'
+							className={style.BulletImage}
+						/>
 						<h4 className={style.name}>{bullet.name}</h4>
 					</div>
 				);

@@ -1,0 +1,13 @@
+.GunName {
+	position: absolute;
+	top: 15%;
+	left: 50%;
+
+	transform: translate(-50%, 0%);
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 10rem;
+	color: rgba(255, 255, 255, 0.5);
+
+	z-index: 1;
+}
