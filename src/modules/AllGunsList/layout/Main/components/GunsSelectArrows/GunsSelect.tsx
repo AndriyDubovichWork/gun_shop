@@ -1,8 +1,13 @@
 import { useState } from 'react';
+import { GunT } from '../../../../../types/GunT';
 import arrow from './assets/arrow.svg';
 import style from './GunsSelect.module.scss';
-const GunsSelect = () => {
-	const guns = ['helo', 'hi', 'bye', 'lol men you are looking for 213123'];
+
+type GunsSelectPropsT = {
+	guns: GunT[];
+};
+
+const GunsSelect = ({ guns }: GunsSelectPropsT) => {
 	const [selectedId, setSelectedId] = useState(1);
 
 	const ChangeIdByValue = (value: number) => {
@@ -16,7 +21,7 @@ const GunsSelect = () => {
 	return (
 		<div className={style.GunsSelect}>
 			<div className={style.Options}>
-				<div className={style.previous}>{guns[selectedId - 1]}</div>
+				<div className={style.previous}>{guns[selectedId - 1]?.name || ''}</div>
 				<img
 					draggable={false}
 					className={style.leftArrow}
@@ -26,7 +31,7 @@ const GunsSelect = () => {
 						ChangeIdByValue(-1);
 					}}
 				/>
-				<div className={style.current}>{guns[selectedId]}</div>
+				<div className={style.current}>{guns[selectedId].name}</div>
 				<img
 					draggable={false}
 					className={style.rightArrow}
@@ -37,7 +42,7 @@ const GunsSelect = () => {
 						ChangeIdByValue(1);
 					}}
 				/>
-				<div className={style.next}>{guns[selectedId + 1]}</div>
+				<div className={style.next}>{guns[selectedId + 1]?.name || ''}</div>
 			</div>
 		</div>
 	);

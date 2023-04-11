@@ -1,0 +1,16 @@
+.Attribute {
+	display: flex;
+
+	justify-content: space-around;
+
+	flex-direction: row;
+	align-content: center;
+	font-family: 'Comfortaa', cursive;
+
+	.AttributeName {
+		color: rgba(255, 255, 255, 0.75);
+	}
+	.AttributeValue {
+		color: rgba(255, 255, 255, 1);
+	}
+}

@@ -1,3 +1,4 @@
+import data from './../../../../store/store';
 import BackGroundImage from './components/BackGroundImage/BackGroundImage ';
 import GunCharacteristics from './components/GunCharacteristics/GunCharacteristics';
 import GunImage from './components/GunImage/GunImage';
@@ -7,11 +8,14 @@ import style from './Main.module.scss';
 const Main = () => {
 	return (
 		<div className={style.Main}>
-			<GunsSelect />
-			<GunName />
-			<BackGroundImage />
-			<GunImage />
-			<GunCharacteristics />
+			<GunsSelect guns={data.AssaultRifles} />
+
+			<GunName name={data.AssaultRifles[0].name} />
+			<GunImage gunImg={data.AssaultRifles[0].gunImage} />
+
+			<BackGroundImage backGroundImg={data.AssaultRifles[0].backGroundImage} />
+
+			<GunCharacteristics characteristics={data.AssaultRifles[0].characteristics} />
 		</div>
 	);
 };
