@@ -19,8 +19,8 @@ export const gunsData: GunsT = {
 			},
 		},
 		{
-			name: 'fn Scar',
-			gunImage: require('./guns/AAC Honey Badger.jpg'),
+			name: 'Honey Badger',
+			gunImage: require('./guns/AAC Honey Badger.png'),
 			backGroundImage: require('./backGround/desert1.jpg'),
 			characteristics: [
 				{
