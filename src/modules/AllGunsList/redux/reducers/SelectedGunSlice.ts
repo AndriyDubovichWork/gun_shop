@@ -1,29 +1,28 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { GunsT } from '../../../types/GunsT';
 
 interface SelectedGunState {
-	value: number;
+	selectedId: number;
+	selectedType: keyof GunsT;
 }
 
 const initialState: SelectedGunState = {
-	value: 0,
+	selectedId: 1,
+	selectedType: 'Rifles',
 };
 
 const SelectedGunSlice = createSlice({
 	name: 'Selected Gun',
 	initialState,
 	reducers: {
-		incremented(state) {
-			// it's okay to do this because immer makes it immutable
-			// under the hood
-			state.value++;
+		setSelectedId(state, action: PayloadAction<number>) {
+			state.selectedId = action.payload;
 		},
-		amountAdded(state, action: PayloadAction<number>) {
-			state.value += action.payload;
+		setSelectedType(state, action: PayloadAction<keyof GunsT>) {
+			state.selectedType = action.payload;
 		},
-		// decrement
-		// reset
 	},
 });
 
-export const { incremented, amountAdded } = SelectedGunSlice.actions;
+export const { setSelectedId, setSelectedType } = SelectedGunSlice.actions;
 export default SelectedGunSlice.reducer;

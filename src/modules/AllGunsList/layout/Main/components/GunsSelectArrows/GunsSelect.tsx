@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import { GunT } from '../../../../../types/GunT';
+import { useAppDispatch, useAppSelector } from '../../../../redux/hooks';
+import { setSelectedId } from '../../../../redux/reducers/SelectedGunSlice';
 import arrow from './assets/arrow.svg';
 import style from './GunsSelect.module.scss';
 
@@ -8,14 +9,13 @@ type GunsSelectPropsT = {
 };
 
 const GunsSelect = ({ guns }: GunsSelectPropsT) => {
-	const [selectedId, setSelectedId] = useState(1);
+	const selectedId = useAppSelector((state) => state.selectedGun.selectedId);
+	const dispatch = useAppDispatch();
 
 	const ChangeIdByValue = (value: number) => {
-		if (value > 0 && selectedId < guns.length - 1) {
-			setSelectedId(selectedId + value);
-		}
-		if (value < 0 && selectedId > 0) {
-			setSelectedId(selectedId + value);
+		// if value is in specific limits
+		if ((value > 0 && selectedId < guns.length - 1) || (value < 0 && selectedId > 0)) {
+			dispatch(setSelectedId(selectedId + value));
 		}
 	};
 	return (

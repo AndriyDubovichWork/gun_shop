@@ -1,5 +1,5 @@
 import logo from './assets/logo.svg';
-import GunTypes from './components/GunCalibers/GunCalibers';
+import GunCalibers from './components/GunCalibers/GunCalibers';
 import style from './Sidebar.module.scss';
 
 type SidebarPropsT = {
@@ -12,7 +12,7 @@ const Sidebar = ({ backgroundColor, dividerColor }: SidebarPropsT) => {
 		<div className={style.Sidebar} style={{ backgroundColor }}>
 			<img src={logo} alt='logo' className={style.Logo} draggable={false} />
 			<div className={style.Divider} style={{ backgroundColor: dividerColor }} />
-			<GunTypes />
+			<GunCalibers />
 		</div>
 	);
 };

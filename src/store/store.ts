@@ -1,11 +1,12 @@
+import { bulletsDataT } from '../modules/types/bulletsDataT';
 import { GunsT } from '../modules/types/GunsT';
 
 export const gunsData: GunsT = {
-	AssaultRifles: [
+	Rifles: [
 		{
 			name: 'fn Scar',
 			gunImage: require('./guns/FnScar.png'),
-			backGroundImage: require('./backGround/Mountain.png'),
+			backGroundImage: require('./backGround/desert.png'),
 			characteristics: [
 				{
 					name: 'hi',
@@ -13,14 +14,14 @@ export const gunsData: GunsT = {
 				},
 			],
 			colors: {
-				primary: '',
-				secondary: '',
+				primary: '#bfa990',
+				secondary: '#ad9a84',
 			},
 		},
 		{
 			name: 'fn Scar',
-			gunImage: require('./guns/FnScar.png'),
-			backGroundImage: require('./backGround/Mountain.png'),
+			gunImage: require('./guns/AAC Honey Badger.jpg'),
+			backGroundImage: require('./backGround/desert1.jpg'),
 			characteristics: [
 				{
 					name: 'hi',
@@ -49,9 +50,9 @@ export const gunsData: GunsT = {
 		},
 	],
 };
-export const bulletsData = [
-	{ url: require('./bulletsImgs/sniperRifle.svg'), name: 'Sniper Rifle' },
-	{ url: require('./bulletsImgs/rifle.svg'), name: 'Rifle' },
-	{ url: require('./bulletsImgs/smg.svg'), name: 'SMG' },
-	{ url: require('./bulletsImgs/pistol.svg'), name: 'Pistol' },
+export const bulletsData: bulletsDataT = [
+	{ url: require('./bulletsImgs/sniperRifle.svg').default, name: 'Sniper Rifle' },
+	{ url: require('./bulletsImgs/rifle.svg').default, name: 'Rifle' },
+	{ url: require('./bulletsImgs/smg.svg').default, name: 'SMG' },
+	{ url: require('./bulletsImgs/pistol.svg').default, name: 'Pistol' },
 ];
