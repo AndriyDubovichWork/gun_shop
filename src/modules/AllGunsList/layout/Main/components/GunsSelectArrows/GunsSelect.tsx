@@ -21,7 +21,14 @@ const GunsSelect = ({ guns }: GunsSelectPropsT) => {
 	return (
 		<div className={style.GunsSelect}>
 			<div className={style.Options}>
-				<div className={style.previous}>{guns[selectedId - 1]?.name || ''}</div>
+				<div
+					className={style.previous}
+					onClick={() => {
+						ChangeIdByValue(-1);
+					}}
+				>
+					{guns[selectedId - 1]?.name || ''}
+				</div>
 				<img
 					draggable={false}
 					className={style.leftArrow}
@@ -42,7 +49,14 @@ const GunsSelect = ({ guns }: GunsSelectPropsT) => {
 						ChangeIdByValue(1);
 					}}
 				/>
-				<div className={style.next}>{guns[selectedId + 1]?.name || ''}</div>
+				<div
+					className={style.next}
+					onClick={() => {
+						ChangeIdByValue(1);
+					}}
+				>
+					{guns[selectedId + 1]?.name || ''}
+				</div>
 			</div>
 		</div>
 	);

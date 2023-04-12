@@ -5,8 +5,6 @@ const GunCalibers = () => {
 	return (
 		<div className={style.GunTypes}>
 			{bulletsData.map((bullet) => {
-				console.log(bullet.url);
-
 				return (
 					<div className={style.GunType}>
 						<img
