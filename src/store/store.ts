@@ -4,6 +4,41 @@ import { GunsT } from '../modules/types/GunsT';
 export const gunsData: GunsT = {
 	Rifles: [
 		{
+			name: 'M4A1',
+			gunImage: require('./guns/M4A1.png'),
+			backGroundImage: require('./backGround/landscape.jpg'),
+			characteristics: [
+				{
+					name: 'Length',
+					value: '33 in (838 mm)',
+				},
+				{
+					name: 'Rate of fire',
+					value: '700–950 RPM',
+				},
+				{
+					name: 'Mass',
+					value: '6.43 lb (2.92 kg)',
+				},
+				{
+					name: 'Barrel length',
+					value: '14.5 in (368 mm)',
+				},
+				{
+					name: 'Effective firing range',
+					value: '500 m (550 yd)',
+				},
+				{
+					name: 'Cartridge:',
+					value: '5.56×45mm NATO',
+				},
+			],
+			colors: {
+				primary: '#2F333E',
+				secondary: '#1E2027',
+			},
+		},
+		{
 			name: 'FN Scar',
 			gunImage: require('./guns/FnScar.png'),
 			backGroundImage: require('./backGround/desert.png'),
@@ -36,41 +71,6 @@ export const gunsData: GunsT = {
 			colors: {
 				primary: '#bfa990',
 				secondary: '#ad9a84',
-			},
-		},
-		{
-			name: 'M4A1',
-			gunImage: require('./guns/M4A1.png'),
-			backGroundImage: require('./backGround/desert1.jpg'),
-			characteristics: [
-				{
-					name: 'Length',
-					value: '33 in (838 mm)',
-				},
-				{
-					name: 'Rate of fire',
-					value: '700–950 RPM',
-				},
-				{
-					name: 'Mass',
-					value: '6.43 lb (2.92 kg)',
-				},
-				{
-					name: 'Barrel length',
-					value: '14.5 in (368 mm)',
-				},
-				{
-					name: 'Effective firing range',
-					value: '500 m (550 yd)',
-				},
-				{
-					name: 'Cartridge:',
-					value: '5.56×45mm NATO',
-				},
-			],
-			colors: {
-				primary: '#2F333E',
-				secondary: '#1E2027',
 			},
 		},
 		{
