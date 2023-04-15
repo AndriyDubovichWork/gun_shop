@@ -1,4 +1,6 @@
 .GunCharacteristics {
+	backdrop-filter: blur(5px);
+
 	z-index: 1;
 
 	position: absolute;
@@ -18,6 +20,8 @@
 		font-size: 1.5rem;
 
 		grid-area: 1 / 1 / 2 / 2;
+
+		margin: 0 auto;
 	}
 	.table {
 		height: 100%;

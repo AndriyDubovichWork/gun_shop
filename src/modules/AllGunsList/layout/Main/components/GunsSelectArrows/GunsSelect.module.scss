@@ -1,4 +1,6 @@
 .GunsSelect {
+
+
 	width: 95vw;
 	margin: 4vh auto;
 
@@ -51,6 +53,9 @@
 		}
 		.previous,
 		.next {
+			cursor:pointer;
+
+
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			-moz-background-clip: text;

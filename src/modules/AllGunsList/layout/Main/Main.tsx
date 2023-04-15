@@ -17,7 +17,7 @@ const Main = ({ gunsData }: MainPropsT) => {
 
 	return (
 		<div className={style.Main}>
-			<GunsSelect guns={gunsData.Rifles} />
+			<GunsSelect guns={selectedType} />
 
 			<GunName name={selectedType[selectedId].name} />
 			<GunImage gunImg={selectedType[selectedId].gunImage} />
