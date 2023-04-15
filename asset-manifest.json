@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/gun_shop/static/css/main.1fc91d36.css",
+    "main.js": "/gun_shop/static/js/main.75d0ec5e.js",
+    "static/media/Mountain.png": "/gun_shop/static/media/Mountain.3bfd5b73d82b0dd496d7.png",
+    "static/media/desert.png": "/gun_shop/static/media/desert.07167dcff6275a9f515d.png",
+    "static/media/FnScar.png": "/gun_shop/static/media/FnScar.ba76a9ef141a9a4b5dfa.png",
+    "static/media/ak47.png": "/gun_shop/static/media/ak47.59c7b1ff87351fdafe71.png",
+    "static/media/M4A1.png": "/gun_shop/static/media/M4A1.b19123218612e90a2fff.png",
+    "static/media/ak74.png": "/gun_shop/static/media/ak74.d47ba96801516f41c7b8.png",
+    "static/media/Glock17.png": "/gun_shop/static/media/Glock17.1c2b6941c10d2bcbc9b4.png",
+    "static/media/ASW.png": "/gun_shop/static/media/ASW.fc39970a262f8e387d5b.png",
+    "static/media/desertEagle.png": "/gun_shop/static/media/desertEagle.934e3569b0067ea0e297.png",
+    "static/media/SIG-Sauer MPX.png": "/gun_shop/static/media/SIG-Sauer MPX.77d3382c67aed120202c.png",
+    "static/media/AAC Honey Badger.png": "/gun_shop/static/media/AAC Honey Badger.883e61e3d2ed4b62b104.png",
+    "static/media/AWP.png": "/gun_shop/static/media/AWP.76349f0aab39921fc977.png",
+    "static/media/Kimel AP-9.png": "/gun_shop/static/media/Kimel AP-9.af3be0845ed88aea1a6c.png",
+    "static/media/CZ750.png": "/gun_shop/static/media/CZ750.fd6b14c2a60a4b9fa1b8.png",
+    "static/media/M1911.png": "/gun_shop/static/media/M1911.36216c515410197acf9f.png",
+    "static/media/Steyr TMP.png": "/gun_shop/static/media/Steyr TMP.55a2ca3d9be40f058a6a.png",
+    "static/media/AKM.png": "/gun_shop/static/media/AKM.3658450e4ded8c650fb6.png",
+    "static/media/logo.svg": "/gun_shop/static/media/logo.52a51c6f06d660ef072705fcbf1f2cc8.svg",
+    "static/media/smg.svg": "/gun_shop/static/media/smg.458e351a0a6f4778e40d51f4cdd31b8b.svg",
+    "static/media/rifle.svg": "/gun_shop/static/media/rifle.d22d262f824f5ffa450b42f97de875f6.svg",
+    "static/media/sniperRifle.svg": "/gun_shop/static/media/sniperRifle.048552a8a81f9786e5db6d9af41a8a22.svg",
+    "static/media/pistol.svg": "/gun_shop/static/media/pistol.340fb3013a6cd5942cfc3522590b3d21.svg",
+    "index.html": "/gun_shop/index.html",
+    "static/media/arrow.svg": "/gun_shop/static/media/arrow.4d0786d2473f3a696152a83d5e87cdf0.svg",
+    "main.1fc91d36.css.map": "/gun_shop/static/css/main.1fc91d36.css.map",
+    "main.75d0ec5e.js.map": "/gun_shop/static/js/main.75d0ec5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fc91d36.css",
+    "static/js/main.75d0ec5e.js"
+  ]
+}
